@@ -1,0 +1,308 @@
+Pass Arguments:  -targetlibinfo -runtime-library-info -targetpassconfig -machinemoduleinfo -tti -libcall-lowering-info -assumption-cache-tracker -profile-summary-info -amdgpu-aa -external-aa -tbaa -scoped-noalias-aa -collector-metadata -machine-branch-prob -reg-usage-info -regalloc-evict -regalloc-priority -pre-isel-intrinsic-lowering -expand-ir-insts -amdgpu-remove-incompatible-functions -amdgpu-printf-runtime-binding -amdgpu-lower-ctor-dtor -domtree -cycles -uniformity -amdgpu-uniform-intrinsic-combine -amdgpu-always-inline -always-inline -amdgpu-export-kernel-runtime-handles -amdgpu-lower-exec-sync -amdgpu-sw-lower-lds -amdgpu-lower-module-lds -domtree -cycles -uniformity -amdgpu-atomic-optimizer -atomic-expand -domtree -loops -amdgpu-promote-alloca -cycles -uniformity -amdgpu-codegenprepare -basic-aa -loop-simplify -scalar-evolution -canon-freeze -iv-users -loop-reduce -basic-aa -aa -mergeicmps -loops -lazy-branch-prob -lazy-block-freq -expand-memcmp -unreachableblockelim -loops -postdomtree -branch-prob -block-freq -consthoist -replace-with-veclib -lazy-branch-prob -lazy-block-freq -opt-remark-emitter -partially-inline-libcalls -post-inline-ee-instrument -scalarize-masked-mem-intrin -expand-reductions -amdgpu-preload-kernel-arguments -domtree -amdgpu-lower-kernel-arguments -loops -codegenprepare -amdgpu-lower-buffer-fat-pointers -amdgpu-lower-intrinsics -lazy-value-info -lowerswitch -lowerinvoke -unreachableblockelim -domtree -basic-aa -aa -flattencfg -domtree -basic-aa -aa -loops -sink -cycles -uniformity -amdgpu-late-codegenprepare -postdomtree -uniformity -amdgpu-unify-divergent-exit-nodes -domtree -cycles -fix-irreducible -loops -unify-loop-exits -postdomtree -domfrontier -regions -structurizecfg -cycles -uniformity -basic-aa -aa -memoryssa -amdgpu-annotate-uniform -loops -si-annotate-control-flow -cycles -uniformity -amdgpu-rewrite-undef-for-phi -lcssa-verification -lcssa -basiccg -DummyCGSCCPass -domtree -basic-aa -aa -objc-arc-contract -inline-asm-prepare -safe-stack -stack-protector -cycles -uniformity -basic-aa -aa -loops -postdomtree -branch-prob -debug-ata -lazy-branch-prob -lazy-block-freq -amdgpu-isel -machinedomtree -si-fix-sgpr-copies -machinepostdomtree -si-i1-copies -finalize-isel -lazy-machine-block-freq -early-tailduplication -opt-phis -slotindexes -stack-coloring -localstackalloc -dead-mi-elimination -machinedomtree -machine-loops -machine-block-freq -early-machinelicm -machinedomtree -machine-block-freq -machine-cse -machinepostdomtree -machine-cycles -machine-sink -peephole-opt -dead-mi-elimination -si-fold-operands -gcn-dpp-combine -si-load-store-opt -dead-mi-elimination -si-shrink-instructions -reg-usage-propagation -amdgpu-prepare-agpr-alloc -detect-dead-lanes -dead-mi-elimination -init-undef -processimpdefs -unreachable-mbb-elimination -livevars -amdgpu-lower-exec-sync -unreachable-mbb-elimination -livevars -machinedomtree -machine-loops -si-opt-vgpr-liverange -phi-node-elimination -si-lower-control-flow -twoaddressinstruction -slotindexes -liveintervals -machine-loops -register-coalescer -rename-independent-subregs -rewrite-partial-reg-uses -domtree -basic-aa -aa -machine-block-freq -machine-scheduler -si-wqm -si-optimize-exec-masking-pre-ra -amdgpu-pre-ra-long-branch-reg -machine-loops -machine-block-freq -livedebugvars -livestacks -virtregmap -liveregmatrix -edge-bundles -spill-code-placement -lazy-machine-block-freq -machine-opt-remark-emitter -greedy -virtregrewriter -stack-slot-coloring -si-lower-sgpr-spills -virtregmap -liveregmatrix -si-pre-allocate-wwm-regs -livestacks -greedy -si-lower-wwm-copies -virtregrewriter -amdgpu-reserve-wwm-regs -virtregmap -liveregmatrix -greedy -amdgpu-nsa-reassign -amdgpu-rewrite-agpr-copy-mfma -virtregrewriter -amdgpu-mark-last-scratch-load -stack-slot-coloring -machine-cp -machinelicm -si-fix-vgpr-copies -si-optimize-exec-masking -removeredundantdebugvalues -fixup-statepoint-caller-saved -postra-machine-sink -machine-block-freq -machinedomtree -machinepostdomtree -lazy-machine-block-freq -machine-opt-remark-emitter -shrink-wrap -prologepilog -machine-latecleanup -branch-folder -lazy-machine-block-freq -tailduplication -machine-cp -postrapseudos -si-shrink-instructions -si-post-ra-bundler -machinedomtree -machine-loops -postmisched -machine-block-freq -machinepostdomtree -block-placement -fentry-insert -xray-instrumentation -gcn-create-vopd -si-memory-legalizer -machinedomtree -machine-loops -machinepostdomtree -si-insert-waitcnts -si-mode-register -si-insert-hard-clauses -si-late-branch-lowering -si-pre-emit-peephole -post-RA-hazard-rec -amdgpu-wait-sgpr-hazards -amdgpu-lower-vgpr-encoding -amdgpu-insert-delay-alu -branch-relaxation -RegUsageInfoCollector -remove-loads-into-fake-uses -livedebugvalues -machine-sanmd -amdgpu-preload-kern-arg-prolog -lazy-machine-block-freq -machine-opt-remark-emitter -stack-frame-layout -amdgpu-resource-usage
+Target Library Information
+Runtime Library Function Analysis
+Target Pass Configuration
+Machine Module Information
+Target Transform Information
+Library Function Lowering Analysis
+Assumption Cache Tracker
+Profile summary info
+AMDGPU Address space based Alias Analysis
+External Alias Analysis
+Type-Based Alias Analysis
+Scoped NoAlias Alias Analysis
+Create Garbage Collector Module Metadata
+Machine Branch Probability Analysis
+Register Usage Information Storage
+Default Regalloc Eviction Advisor
+Default Regalloc Priority Advisor
+  ModulePass Manager
+    Pre-ISel Intrinsic Lowering
+    FunctionPass Manager
+      Expand IR instructions
+    AMDGPU Remove Incompatible Functions
+    AMDGPU Printf lowering
+    Lower ctors and dtors for AMDGPU
+    FunctionPass Manager
+      Dominator Tree Construction
+      Cycle Info Analysis
+      Uniformity Analysis
+      AMDGPU Uniform Intrinsic Combine
+    Expand variadic functions
+    AMDGPU Inline All Functions
+    Inliner for always_inline functions
+      FunctionPass Manager
+        Dominator Tree Construction
+        Basic Alias Analysis (stateless AA impl)
+        Function Alias Analysis Results
+    Externalize enqueued block runtime handles
+    AMDGPU lowering of execution synchronization
+    AMDGPU Software lowering of LDS
+    Lower uses of LDS variables from non-kernel functions
+    FunctionPass Manager
+      Dominator Tree Construction
+      Cycle Info Analysis
+      Uniformity Analysis
+      AMDGPU atomic optimizations
+      Expand Atomic instructions
+      Dominator Tree Construction
+      Natural Loop Information
+      AMDGPU Promote Alloca
+      Cycle Info Analysis
+      Uniformity Analysis
+      AMDGPU IR optimizations
+      Basic Alias Analysis (stateless AA impl)
+      Canonicalize natural loops
+      Scalar Evolution Analysis
+      Loop Pass Manager
+        Canonicalize Freeze Instructions in Loops
+        Induction Variable Users
+        Loop Strength Reduction
+      Basic Alias Analysis (stateless AA impl)
+      Function Alias Analysis Results
+      Merge contiguous icmps into a memcmp
+      Natural Loop Information
+      Lazy Branch Probability Analysis
+      Lazy Block Frequency Analysis
+      Expand memcmp() to load/stores
+      Remove unreachable blocks from the CFG
+      Natural Loop Information
+      Post-Dominator Tree Construction
+      Branch Probability Analysis
+      Block Frequency Analysis
+      Constant Hoisting
+      Replace intrinsics with calls to vector library
+      Lazy Branch Probability Analysis
+      Lazy Block Frequency Analysis
+      Optimization Remark Emitter
+      Partially inline calls to library functions
+      Instrument function entry/exit with calls to e.g. mcount() (post inlining)
+      Scalarize Masked Memory Intrinsics
+      Expand reduction intrinsics
+    AMDGPU Preload Kernel Arguments
+    FunctionPass Manager
+      Dominator Tree Construction
+      AMDGPU Lower Kernel Arguments
+      Natural Loop Information
+      CodeGen Prepare
+    Lower buffer fat pointer operations to buffer resources
+    AMDGPU lower intrinsics
+    FunctionPass Manager
+      Lazy Value Information Analysis
+      Lower SwitchInst's to branches
+      Lower invoke and unwind, for unwindless code generators
+      Remove unreachable blocks from the CFG
+      Dominator Tree Construction
+      Basic Alias Analysis (stateless AA impl)
+      Function Alias Analysis Results
+      Flatten the CFG
+      Dominator Tree Construction
+      Basic Alias Analysis (stateless AA impl)
+      Function Alias Analysis Results
+      Natural Loop Information
+      Code sinking
+      Cycle Info Analysis
+      Uniformity Analysis
+      AMDGPU IR late optimizations
+      Post-Dominator Tree Construction
+      Uniformity Analysis
+      Unify divergent function exit nodes
+      Dominator Tree Construction
+      Cycle Info Analysis
+      Convert irreducible control-flow into natural loops
+      Natural Loop Information
+      Fixup each natural loop to have a single exit block
+      Post-Dominator Tree Construction
+      Dominance Frontier Construction
+      Detect single entry single exit regions
+      Region Pass Manager
+        Structurize control flow
+      Cycle Info Analysis
+      Uniformity Analysis
+      Basic Alias Analysis (stateless AA impl)
+      Function Alias Analysis Results
+      Memory SSA
+      AMDGPU Annotate Uniform Values
+      Natural Loop Information
+      SI annotate control flow
+      Cycle Info Analysis
+      Uniformity Analysis
+      AMDGPU Rewrite Undef for PHI
+      LCSSA Verifier
+      Loop-Closed SSA Form Pass
+    CallGraph Construction
+    Call Graph SCC Pass Manager
+      DummyCGSCCPass
+      FunctionPass Manager
+        Dominator Tree Construction
+        Basic Alias Analysis (stateless AA impl)
+        Function Alias Analysis Results
+        ObjC ARC contraction
+        Prepare inline asm insts
+        Safe Stack instrumentation pass
+        Insert stack protectors
+        Cycle Info Analysis
+        Uniformity Analysis
+        Basic Alias Analysis (stateless AA impl)
+        Function Alias Analysis Results
+        Natural Loop Information
+        Post-Dominator Tree Construction
+        Branch Probability Analysis
+        Assignment Tracking Analysis
+        Lazy Branch Probability Analysis
+        Lazy Block Frequency Analysis
+        AMDGPU DAG->DAG Pattern Instruction Selection
+        MachineDominator Tree Construction
+        SI Fix SGPR copies
+        MachinePostDominator Tree Construction
+        SI Lower i1 Copies
+        Finalize ISel and expand pseudo-instructions
+        Lazy Machine Block Frequency Analysis
+        Early Tail Duplication
+        Optimize machine instruction PHIs
+        Slot index numbering
+        Merge disjoint stack slots
+        Local Stack Slot Allocation
+        Remove dead machine instructions
+        MachineDominator Tree Construction
+        Machine Natural Loop Construction
+        Machine Block Frequency Analysis
+        Early Machine Loop Invariant Code Motion
+        MachineDominator Tree Construction
+        Machine Block Frequency Analysis
+        Machine Common Subexpression Elimination
+        MachinePostDominator Tree Construction
+        Machine Cycle Info Analysis
+        Machine code sinking
+        Peephole Optimizations
+        Remove dead machine instructions
+        SI Fold Operands
+        GCN DPP Combine
+        SI Load Store Optimizer
+        Remove dead machine instructions
+        SI Shrink Instructions
+        Register Usage Information Propagation
+        AMDGPU Prepare AGPR Alloc
+        Detect Dead Lanes
+        Remove dead machine instructions
+        Init Undef Pass
+        Process Implicit Definitions
+        Remove unreachable machine basic blocks
+        Live Variable Analysis
+    AMDGPU lowering of execution synchronization
+    FunctionPass Manager
+      Remove unreachable machine basic blocks
+      Live Variable Analysis
+      MachineDominator Tree Construction
+      Machine Natural Loop Construction
+      SI Optimize VGPR LiveRange
+      Eliminate PHI nodes for register allocation
+      SI Lower control flow pseudo instructions
+      Two-Address instruction pass
+      Slot index numbering
+      Live Interval Analysis
+      Machine Natural Loop Construction
+      Register Coalescer
+      Rename Disconnected Subregister Components
+      Rewrite Partial Register Uses
+      Dominator Tree Construction
+      Basic Alias Analysis (stateless AA impl)
+      Function Alias Analysis Results
+      Machine Block Frequency Analysis
+      Machine Instruction Scheduler
+      SI Whole Quad Mode
+      SI optimize exec mask operations pre-RA
+      AMDGPU Pre-RA Long Branch Reg
+      Machine Natural Loop Construction
+      Machine Block Frequency Analysis
+      Debug Variable Analysis
+      Live Stack Slot Analysis
+      Virtual Register Map
+      Live Register Matrix
+      Bundle Machine CFG Edges
+      Spill Code Placement Analysis
+      Lazy Machine Block Frequency Analysis
+      Machine Optimization Remark Emitter
+      Greedy Register Allocator
+      Virtual Register Rewriter
+      Stack Slot Coloring
+      SI lower SGPR spill instructions
+      Virtual Register Map
+      Live Register Matrix
+      SI Pre-allocate WWM Registers
+      Live Stack Slot Analysis
+      Greedy Register Allocator
+      SI Lower WWM Copies
+      Virtual Register Rewriter
+      AMDGPU Reserve WWM Registers
+      Virtual Register Map
+      Live Register Matrix
+      Greedy Register Allocator
+      GCN NSA Reassign
+      AMDGPU Rewrite AGPR-Copy-MFMA
+      Virtual Register Rewriter
+      AMDGPU Mark Last Scratch Load
+      Stack Slot Coloring
+      Machine Copy Propagation Pass
+      Machine Loop Invariant Code Motion
+      SI Fix VGPR copies
+      SI optimize exec mask operations
+      Remove Redundant DEBUG_VALUE analysis
+      Fixup Statepoint Caller Saved
+      PostRA Machine Sink
+      Machine Block Frequency Analysis
+      MachineDominator Tree Construction
+      MachinePostDominator Tree Construction
+      Lazy Machine Block Frequency Analysis
+      Machine Optimization Remark Emitter
+      Shrink Wrapping analysis
+      Prologue/Epilogue Insertion & Frame Finalization
+      Machine Late Instructions Cleanup Pass
+      Control Flow Optimizer
+      Lazy Machine Block Frequency Analysis
+      Tail Duplication
+      Machine Copy Propagation Pass
+      Post-RA pseudo instruction expansion pass
+      SI Shrink Instructions
+      SI post-RA bundler
+      MachineDominator Tree Construction
+      Machine Natural Loop Construction
+      PostRA Machine Instruction Scheduler
+      Machine Block Frequency Analysis
+      MachinePostDominator Tree Construction
+      Branch Probability Basic Block Placement
+      Insert fentry calls
+      Insert XRay ops
+      GCN Create VOPD Instructions
+      SI Memory Legalizer
+      MachineDominator Tree Construction
+      Machine Natural Loop Construction
+      MachinePostDominator Tree Construction
+      SI insert wait instructions
+      Insert required mode register values
+      SI Insert Hard Clauses
+      SI Final Branch Preparation
+      SI peephole optimizations
+      Post RA hazard recognizer
+      AMDGPU Insert waits for SGPR read hazards
+      AMDGPU Lower VGPR Encoding
+      AMDGPU Insert Delay ALU
+      Branch relaxation pass
+      Register Usage Information Collector Pass
+      Remove Loads Into Fake Uses
+      Live DEBUG_VALUE analysis
+      Machine Sanitizer Binary Metadata
+      AMDGPU Preload Kernel Arguments Prolog
+      Lazy Machine Block Frequency Analysis
+      Machine Optimization Remark Emitter
+      Stack Frame Layout Analysis
+      Function register usage analysis
+      AMDGPU Assembly Printer
+      Free MachineFunction
+Pass Arguments:  -assumption-cache-tracker -targetlibinfo -domtree -basic-aa -aa
+Assumption Cache Tracker
+Target Library Information
+  FunctionPass Manager
+    Dominator Tree Construction
+    Basic Alias Analysis (stateless AA impl)
+    Function Alias Analysis Results
