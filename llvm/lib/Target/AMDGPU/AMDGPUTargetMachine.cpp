@@ -1659,6 +1659,8 @@ void GCNPassConfig::addFastRegAlloc() {
 void GCNPassConfig::addPreRegAlloc() {
   if (getOptLevel() != CodeGenOptLevel::None)
     addPass(&AMDGPUPrepareAGPRAllocLegacyID);
+
+  insertPass(&LiveVariablesID, &AMDGPULowerExecSyncLegacyPassID);
 }
 
 void GCNPassConfig::addOptimizedRegAlloc() {
