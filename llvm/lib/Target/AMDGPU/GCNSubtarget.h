@@ -70,8 +70,6 @@ protected:
   unsigned InstCacheLineSize = 0;
 
   // Dynamically set bits that enable features.
-  bool DynamicVGPR = false;
-  bool DynamicVGPRBlockSize32 = false;
   bool ScalarizeGlobal = false;
 
   /// The maximum number of instructions that may be placed within an S_CLAUSE,
@@ -938,11 +936,6 @@ public:
   // \returns true if the subtarget needs S_WAIT_ALU 0 before S_GETREG_B32 on
   // STATUS, STATE_PRIV, EXCP_FLAG_PRIV, or EXCP_FLAG_USER.
   bool requiresWaitIdleBeforeGetReg() const { return HasGFX1250Insts; }
-
-  bool isDynamicVGPREnabled() const { return DynamicVGPR; }
-  unsigned getDynamicVGPRBlockSize() const {
-    return DynamicVGPRBlockSize32 ? 32 : 16;
-  }
 
   bool requiresDisjointEarlyClobberAndUndef() const override {
     // AMDGPU doesn't care if early-clobber and undef operands are allocated
